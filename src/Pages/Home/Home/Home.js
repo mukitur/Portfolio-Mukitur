@@ -3,7 +3,8 @@ import Footer from '../../../Shared/Footer/Footer';
 import Navigation from '../../../Shared/Navigation/Navigation';
 import AboutMe from '../AboutMe/AboutMe';
 import Banner from '../Banner/Banner';
-import Projects from '../Projects/Projects';
+import HomeProjects from '../HomeProjects/HomeProjects';
+
 
 const Home = () => {
     return (
@@ -11,7 +12,7 @@ const Home = () => {
             <Navigation></Navigation>
             <Banner></Banner>
             <AboutMe></AboutMe>
-            <Projects></Projects>
+            <HomeProjects></HomeProjects>
             <Footer></Footer>
         </div>
     );
