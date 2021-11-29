@@ -43,36 +43,27 @@ const Navigation = () => {
         mobileNavItem: {
           textDecoration: 'none',
           color: "black"
+        },
+        navbarBgColor:{
+          backgroundColor: 'black'
         }
 
     })
     
-    const {navItem, navIcon, navItemContainer, navLogo, mobileNavItem } = useStyle();
+    const {navItem, navIcon, navItemContainer, navLogo, mobileNavItem,navbarBgColor } = useStyle();
 
     //drawer add
 
     const [state, setState] = React.useState(false);
   
-    /* const toggleDrawer = (anchor, open) => (event) => {
-      if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
-        return;
-      }
-  
-      setState({ ...state, [anchor]: open });
-    };
-   */
     const list = (
       <Box
         sx={{ width:250 }}
         role="presentation"
-        //onClick={toggleDrawer(anchor, false)}
-        //onKeyDown={toggleDrawer(anchor, false)}
       >
         <List>
-        
           <ListItem button>
-          <ListItemIcon>
-                 
+          <ListItemIcon> 
               </ListItemIcon>
               <Link className={mobileNavItem} to ="/">Home</Link>
           </ListItem>
@@ -89,25 +80,14 @@ const Navigation = () => {
               <Link  className={mobileNavItem}to ="/contact">Contact</Link>
           </ListItem>
           <Divider />
-          {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
+          {/* {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
             <ListItem button key={text}>
               <ListItemIcon>
                 {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
               </ListItemIcon>
               <ListItemText primary={text} />
             </ListItem>
-          ))}
-        </List>
-        <Divider />
-        <List>
-          {['All mail', 'Trash', 'Spam'].map((text, index) => (
-            <ListItem button key={text}>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItem>
-          ))}
+          ))} */}
         </List>
       </Box>
     );
@@ -115,7 +95,7 @@ const Navigation = () => {
     return (
       <>
           <Box sx={{ flexGrow: 1 }}>
-            <AppBar position="sticky">
+            <AppBar position="sticky" style={{backgroundColor: 'black'}}>
               <Toolbar>
                   <IconButton
                     size="large"
