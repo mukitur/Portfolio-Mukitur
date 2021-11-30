@@ -14,9 +14,6 @@ import List from '@mui/material/List';
 import Divider from '@mui/material/Divider';
 import ListItem from '@mui/material/ListItem';
 import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
 
 const Navigation = () => {
     const theme = useTheme();
@@ -43,14 +40,11 @@ const Navigation = () => {
         mobileNavItem: {
           textDecoration: 'none',
           color: "black"
-        },
-        navbarBgColor:{
-          backgroundColor: 'black'
         }
 
     })
     
-    const {navItem, navIcon, navItemContainer, navLogo, mobileNavItem,navbarBgColor } = useStyle();
+    const {navItem, navIcon, navItemContainer, navLogo, mobileNavItem } = useStyle();
 
     //drawer add
 
@@ -80,14 +74,6 @@ const Navigation = () => {
               <Link  className={mobileNavItem}to ="/contact">Contact</Link>
           </ListItem>
           <Divider />
-          {/* {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-            <ListItem button key={text}>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItem>
-          ))} */}
         </List>
       </Box>
     );
@@ -95,7 +81,7 @@ const Navigation = () => {
     return (
       <>
           <Box sx={{ flexGrow: 1 }}>
-            <AppBar position="sticky" style={{backgroundColor: 'black'}}>
+            <AppBar position="sticky" style={{backgroundColor: '#001e3c'}}>
               <Toolbar>
                   <IconButton
                     size="large"

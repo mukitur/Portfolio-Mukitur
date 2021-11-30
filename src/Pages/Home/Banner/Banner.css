@@ -1,0 +1,29 @@
+.banner-items {
+  display: flex;
+  align-items: center;
+  color: #17599c;
+}
+.banner-icon {
+  font-size: 20px;
+  margin-right: 8px;
+  color: #17599c;
+}
+.banner {
+  background-color: cadetblue;
+  display: flex;
+}
+.imageContainer {
+  width: 400px;
+  height: 400px;
+  background-color: cadetblue;
+  border-radius: 10px;
+  display: "flex";
+  align-items: flex-end;
+  overflow: hidden;
+  justify-content: center;
+}
+.imageContainer img {
+  height: 90%;
+  justify-content: center;
+  align-items: center;
+}

@@ -8,7 +8,8 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import SettingsCellIcon from '@mui/icons-material/SettingsCell';
 import MarkEmailUnreadIcon from '@mui/icons-material/MarkEmailUnread';
-import { Box, textAlign } from '@mui/system';
+import { Box } from '@mui/system';
+import './Banner.css';
 
 const Banner = () => {
     const bannerBg = {
@@ -19,8 +20,7 @@ const Banner = () => {
     const verticalCenter={
         display: 'flex',
         alignItems: 'center',
-        height: 500,
-        border: 'ipx solid red'
+        height: 500
     }
     return (
         <div style={{backgroundColor: '#f8f8f8'}}>
@@ -38,15 +38,17 @@ const Banner = () => {
                                 React Developer, Dhaka-Bangladesh
                             </Typography>
                             <br/><br/>
-                            <Typography variant='h6'>
-                            <SettingsCellIcon/> +880 1715 0555 63
+                            <Typography className="banner-items" variant='h6'>
+                            <SettingsCellIcon className="banner-icon"/> +880 1715 0555 63
                             </Typography>
-                            <Typography variant='h6'>
-                                <MarkEmailUnreadIcon/> mukitur.rahman2050@gmail.com
+                            <Typography className="banner-items" variant='h6'>
+                                <MarkEmailUnreadIcon className="banner-icon"/> mukitur.rahman2050@gmail.com
                             </Typography>
                             <br/>
-                            <LinkedInIcon/>
-                            <GitHubIcon/>
+                            <Box className="banner-icon">
+                                <LinkedInIcon/>
+                                <GitHubIcon/>
+                            </Box>
                         </Box>
                     </Grid>   
                 </Grid>
