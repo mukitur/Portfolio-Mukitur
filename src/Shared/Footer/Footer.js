@@ -2,10 +2,19 @@ import { Container, Grid, TextField, Typography } from '@mui/material';
 import React from 'react';
 import Button from '@mui/material/Button';
 import SendIcon from '@mui/icons-material/Send';
-import Stack from '@mui/material/Stack';
 import { Box } from '@mui/system';
+import emailjs from 'emailjs-com';
 
 const Footer = () => {
+    function sendEmail(e){
+        
+        emailjs.sendForm('service_yeryqij' , 'template_m1asw2e', e.target, 'user_jdWKYuVPcrmQs5UerXt2S')
+        .then(res=>{
+            console.log(res)
+        }).catch(err=>console.log(err))
+
+        e.preventDefault();
+    }
     return (
         <div style={{backgroundColor: '#f8f8f8'}}>
             <Container style={{marginTop: 50}}>
@@ -17,7 +26,7 @@ const Footer = () => {
                         write me a letter here_
                     </Typography>
                     <br/>
-                    <form >
+                    <form onSubmit={sendEmail}>
                         
                         <TextField
                             sx={{ width: '100%', m: 1 }}
