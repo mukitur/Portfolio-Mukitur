@@ -8,6 +8,9 @@ import prj3 from '../../../images/portfolio/smart-watch/sw3.jpg';
 import { Link } from 'react-router-dom';
 
 const WatchWorld = () => {
+    const handlewatchworldLink = ()=>{
+        window.location.assign("https://watch-world-14cd8.web.app/ ")
+    }
     return (
         <div>
             <Navigation></Navigation>
@@ -24,7 +27,7 @@ const WatchWorld = () => {
                     Technology:  React, React Router, Firebase authentication, Material UI, Context API, Node, Express, MongoDB
                 </Typography><br/>
                 <Typography variant="h6">
-                    Live Site: https://watch-world-14cd8.web.app/ 
+                    Live Site:<span onClick={handlewatchworldLink}> https://watch-world-14cd8.web.app/ </span>
                 </Typography><br/><br/>
                 <Typography variant="overline">
                     <img style={{width: '50%'}} src={prj1} alt=""/>

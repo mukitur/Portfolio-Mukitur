@@ -6,6 +6,16 @@ import proj3 from '../../../images/portfolio/dental/dental1.jpg';
 import { Link } from 'react-router-dom';
 
 const HomeProjects = () => {
+    const handlewatchworldLink = ()=>{
+        window.location.assign("https://watch-world-14cd8.web.app/ ")
+    }
+    const handlewtravelLink = ()=>{
+        window.location.assign("https://aircloud-tours.web.app/ ")
+    }
+    const handleDentalLink = ()=>{
+        window.location.assign("https://samarium-dental-studio.web.app/ ")
+    }
+
     return (
         <div>
             <Container>
@@ -26,6 +36,10 @@ const HomeProjects = () => {
                         <br/>
                         <Typography variant="overline">
                             Technology:  React, React Router, Firebase authentication, Material UI, Context API, Node, Express, MongoDB
+                        </Typography>
+                        <br/>
+                        <Typography  variant="overline">
+                            <Button onClick={handlewatchworldLink}  >View Live</Button>
                         </Typography>
                         <br/><br/>
                        
@@ -51,6 +65,9 @@ const HomeProjects = () => {
                         <br/>
                         <Typography variant="overline">
                             Technology:  React, React Router, Firebase authentication, Bootstrap, Context API, Node, Express, MongoDB
+                        </Typography><br/>
+                        <Typography  variant="overline">
+                            <Button onClick={handlewtravelLink}  >View Live</Button>
                         </Typography>
                         <br/><br/>
                        
@@ -76,6 +93,9 @@ const HomeProjects = () => {
                         <br/>
                         <Typography variant="overline">
                             Technology:  React, React Router, Firebase authentication, Bootstrap, Context API, Font Awesome, React Hook Form
+                        </Typography><br/>
+                        <Typography  variant="overline">
+                            <Button onClick={handleDentalLink}  >View Live</Button>
                         </Typography>
                         <br/><br/>
                        

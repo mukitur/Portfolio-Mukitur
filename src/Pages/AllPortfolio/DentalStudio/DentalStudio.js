@@ -5,6 +5,9 @@ import Navigation from '../../../Shared/Navigation/Navigation';
 import prj1 from '../../../images/portfolio/dental/dental1.jpg';
 
 const DentalStudio = () => {
+    const handleDentalLink = ()=>{
+        window.location.assign("https://samarium-dental-studio.web.app/ ")
+    }
     return (
         <div>
             <Navigation></Navigation>
@@ -21,7 +24,7 @@ const DentalStudio = () => {
                 Technology:  React, React Router, Firebase authentication, Bootstrap, Context API, Font Awesome, React Hook Form
                 </Typography><br/>
                 <Typography variant="h6">
-                    Live Site: https://samarium-dental-studio.web.app/
+                    <span onClick={handleDentalLink}>Live Site: https://samarium-dental-studio.web.app/</span>
                 </Typography><br/><br/>
                 <Typography variant="overline">
                     <img style={{width: '50%'}} src={prj1} alt=""/>

@@ -22,6 +22,12 @@ const Banner = () => {
         alignItems: 'center',
         height: 500
     }
+    const linkedinLink = ()=>{
+        window.location.assign("https://www.linkedin.com/in/mukiturrahman/")
+    }
+    const githubLink = ()=>{
+        window.location.assign("https://github.com/mukitur")
+    }
     return (
         <div style={{backgroundColor: '#f8f8f8'}}>
             <Container  sx={{ flexGrow: 1 }}>
@@ -46,8 +52,8 @@ const Banner = () => {
                             </Typography>
                             <br/>
                             <Box className="banner-icon">
-                                <LinkedInIcon/>
-                                <GitHubIcon/>
+                                <LinkedInIcon onClick={linkedinLink}/>
+                                <GitHubIcon onClick={githubLink}/>
                             </Box>
                         </Box>
                     </Grid>   

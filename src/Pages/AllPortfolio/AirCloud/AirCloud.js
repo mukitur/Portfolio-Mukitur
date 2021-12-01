@@ -7,6 +7,9 @@ import prj2 from '../../../images/portfolio/Tours/travel2.jpg';
 import prj3 from '../../../images/portfolio/Tours/travel3jpg.jpg';
 
 const AirCloud = () => {
+    const handlewtravelLink = ()=>{
+        window.location.assign("https://aircloud-tours.web.app/ ")
+    }
     return (
         <div>
             <Navigation></Navigation>
@@ -23,7 +26,7 @@ const AirCloud = () => {
                 Technology:  React, React Router, Firebase authentication, Material UI, Context API, Node, Express, MongoDB
                 </Typography><br/>
                 <Typography variant="h6">
-                    Live Site: https://aircloud-tours.web.app/
+                    <span onClick={handlewtravelLink}>Live Site: https://aircloud-tours.web.app/</span>
                 </Typography><br/><br/>
                 <Typography variant="overline">
                     <img style={{width: '50%'}} src={prj1} alt=""/> 
