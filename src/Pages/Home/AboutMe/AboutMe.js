@@ -2,7 +2,8 @@ import { Container, Divider, Typography } from '@mui/material';
 import React from 'react';
 import SystemUpdateAltIcon from '@mui/icons-material/SystemUpdateAlt';
 import Button from '@mui/material/Button';
-import { typography } from '@mui/system';
+import { Link } from 'react-router-dom';
+import resume from '../../../images/Resume_Mukitur_Rahman.pdf';
 
 const AboutMe = () => {
     return (
@@ -10,11 +11,11 @@ const AboutMe = () => {
             <Container>
                 <Typography style={{fontSize: 30}} variant="overline">Hi_</Typography>
                 <Typography>
-                I am Junior Web developer able to build a Web presence from the ground up - from concept, navigation, layout and programming to UX and SEO. Skilled at writing well-designed, testable and efficient code using current best practices in Web development. Fast learner, hard worker and team player who is proficient in an array of scripting languages and multimedia Web tools.
+                I am looking for a new role and would appreciate your support. Experienced with all stages of the development cycle for dynamic web projects. Well-versed in numerous programming languages including HTML5, CSS, JavaScript. I am also familier with React, Node, Express, MongoDB and Wordpress CMS.
                 </Typography>
                 <br/>
                 <Typography>
-                    <Button variant="contained"><SystemUpdateAltIcon/> Download Resume</Button>
+                    <Button variant="contained"><SystemUpdateAltIcon/> <Link style={{textDecoration: 'none', paddingLeft: '8px', color: "white"}} to ={resume} target= "_blank">Download RESUME</Link></Button>
                 </Typography>
             </Container>
             <br/>

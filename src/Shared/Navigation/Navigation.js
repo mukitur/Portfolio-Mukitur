@@ -14,6 +14,7 @@ import List from '@mui/material/List';
 import Divider from '@mui/material/Divider';
 import ListItem from '@mui/material/ListItem';
 import ListItemIcon from '@mui/material/ListItemIcon';
+import PersonIcon from '@mui/icons-material/Person';
 
 const Navigation = () => {
     const theme = useTheme();
@@ -95,7 +96,7 @@ const Navigation = () => {
                   <MenuIcon/>
                 </IconButton>
                 <Typography className={navLogo} variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                  <Link className={navItem} to = "/">Mukitur's Profile</Link>
+                  <Link className={navItem} to = "/"><PersonIcon/> MUKITUR'S PROFILE</Link>
                 </Typography>
                 <Box className = {navItemContainer}>
                     <Link className={navItem} to = "/"><Button color="inherit">Home</Button></Link>

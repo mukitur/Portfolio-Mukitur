@@ -1,6 +1,9 @@
 import { Container, Grid, TextField, Typography } from '@mui/material';
 import React from 'react';
 import Button from '@mui/material/Button';
+import SendIcon from '@mui/icons-material/Send';
+import Stack from '@mui/material/Stack';
+import { Box } from '@mui/system';
 
 const Footer = () => {
     return (
@@ -14,30 +17,34 @@ const Footer = () => {
                         write me a letter here_
                     </Typography>
                     <br/>
-                    <form>
+                    <form >
+                        
                         <TextField
                             sx={{ width: '100%', m: 1 }}
                             id="outlined-size-small"
-                            name="productName"
+                            name="name"
                             defaultValue="Your Name"
                             size="small"
                         /><br/>
                         <TextField
                             sx={{ width: '100%', m: 1 }}
                             id="outlined-size-small"
-                            name="description"
+                            name="user_email"
                             defaultValue="Email Address"
                             size="small"
                         /><br/>
                         <TextField
                             sx={{ width: '100%', m: 1 }}
                             id="outlined-size-small"
-                            name="image"
-                            defaultValue="Message"
+                            name="message"
+                            defaultValue="http://leadconstructionbd.com/"
                             size="small"
                         />
                         <br/>
-                        <Button type="submit" variant="contained">Send</Button>
+                        <Box style={{textAlign: 'center'}}>
+                            <Button style={{marginTop: '20px'}} type="submit" variant="contained" size="large" endIcon={<SendIcon />}> Send
+                            </Button>
+                        </Box>
                         
                     </form>
                     <br/>
