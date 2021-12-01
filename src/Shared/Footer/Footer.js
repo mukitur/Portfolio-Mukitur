@@ -7,39 +7,46 @@ const Footer = () => {
         <div style={{backgroundColor: '#f8f8f8'}}>
             <Container style={{marginTop: 50}}>
             <Grid container spacing={2}>
-                <Grid item xs={12} md={2}>
-                    
-                </Grid>
-                <Grid item xs={12} md={8}>
+                <Grid item xs={12} md={3}/>
+                <Grid item xs={12} md={6}>
                     
                     <Typography style={{fontSize: 30}} variant="overline">
-                        Get In Touch_
+                        write me a letter here_
                     </Typography>
                     <br/>
-                    <Typography variant="overline">
-                        or write me a letter here_
-                    </Typography>
+                    <form>
+                        <TextField
+                            sx={{ width: '100%', m: 1 }}
+                            id="outlined-size-small"
+                            name="productName"
+                            defaultValue="Your Name"
+                            size="small"
+                        /><br/>
+                        <TextField
+                            sx={{ width: '100%', m: 1 }}
+                            id="outlined-size-small"
+                            name="description"
+                            defaultValue="Email Address"
+                            size="small"
+                        /><br/>
+                        <TextField
+                            sx={{ width: '100%', m: 1 }}
+                            id="outlined-size-small"
+                            name="image"
+                            defaultValue="Message"
+                            size="small"
+                        />
+                        <br/>
+                        <Button type="submit" variant="contained">Send</Button>
+                        
+                    </form>
                     <br/>
-                    <Typography variant="overline">
-                        <TextField id="standard-basic" label="Your Name" width= "100%" variant="standard" />
+                    <Typography style={{textAlign: 'center', marginBottom: '20px'}}>
+                        Copyright@2021. All rights Reserved.
                     </Typography>
-                    <br/>
-                    <Typography variant="overline">
-                        <TextField id="standard-basic" label="Email" variant="standard" />
-                    </Typography>
-                    <br/>
-                    <Typography variant="overline">
-                        <TextField id="standard-basic" label="Email" variant="standard" />
-                    </Typography>
-                    <br/> <br/>
-                    <Typography>
-                        <Button variant="contained">Send</Button>
-                    </Typography>
-                    <br/><br/>
+
                 </Grid>
-                <Grid item xs={12} md={2}>
-                   
-                </Grid>
+                <Grid item xs={12} md={3}/>
             </Grid>
             </Container>
             

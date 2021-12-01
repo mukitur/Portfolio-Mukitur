@@ -1,6 +1,8 @@
 import { Button, Container, Grid, Typography } from '@mui/material';
 import React from 'react';
-import prj1 from '../../../images/p1.png';
+import prj1 from '../../../images/portfolio/smart-watch/sw1.jpg';
+import proj2 from '../../../images/portfolio/Tours/travel1.jpg';
+import proj3 from '../../../images/portfolio/dental/dental1.jpg';
 import { Link } from 'react-router-dom';
 
 const HomeProjects = () => {
@@ -35,7 +37,7 @@ const HomeProjects = () => {
                 {/* Portfolio2 */}
                 <Grid container spacing={2}>
                     <Grid item xs={12} md={6}>
-                        <img style={{width: '100%'}} src={prj1} alt=""/>
+                        <img style={{width: '100%'}} src={proj2} alt=""/>
                     </Grid>
                     <Grid item xs={12} md={6}>
                         <br/>
@@ -60,7 +62,7 @@ const HomeProjects = () => {
                 {/* portfolio3 */}
                 <Grid container spacing={2}>
                     <Grid item xs={12} md={6}>
-                        <img style={{width: '100%'}} src={prj1} alt=""/>
+                        <img style={{width: '100%'}} src={proj3} alt=""/>
                     </Grid>
                     <Grid item xs={12} md={6}>
                         <br/>
