@@ -46,7 +46,7 @@ const Footer = () => {
                             sx={{ width: '100%', m: 1 }}
                             id="outlined-size-small"
                             name="message"
-                            defaultValue="http://leadconstructionbd.com/"
+                            defaultValue="Message"
                             size="small"
                         />
                         <br/>
